@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nameStar = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe ', ' Regulus'];
+    let star = ['Ursa Mino', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', ' Ursa Major', 'Leo'];
+    let input = prompt('Nhap ten ngoi sao');
+
+    function checknameStar() {
+        let check = false;
+        let i;
+        for ( i = 0; i < nameStar.length; i++) {
+            if (input === nameStar[i]) {
+                check = true;
+                break;
+            }
+        }
+        if (check) {
+            alert(star[i]);
+        } else{
+
+            alert(input +' khong thuoc danh sach')
+        }
+
+    }
+    checknameStar();
+</script>
+</body>
+</html>
